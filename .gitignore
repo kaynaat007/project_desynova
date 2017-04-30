@@ -1,0 +1,25 @@
+env
+env.bk
+coreapi/coreapi/static
+db.sqlite3
+.idea/*
+*.swp
+*.csv
+*.sql
+*.txt
+*.deb
+*.pyc
+*.csv#
+*.xlsx#
+*/*.pyc
+*/*/*.pyc
+*/*/*/*.pyc
+*/*/*/*/*.pyc
+*/*/*/*/*/*.pyc
+
+
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
