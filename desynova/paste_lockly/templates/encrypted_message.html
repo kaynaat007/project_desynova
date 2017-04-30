@@ -1,0 +1,22 @@
+<form action=""  method="post">
+    {% csrf_token %}
+
+    <h2>Your submitted message is:</h2>
+
+    <p id="message"> {{message}} </p>
+
+    <br/>
+
+    {{form.secret_key.label}} <br/>
+
+    ({{form.secret_key.help_text}}) <br/>
+
+    {{form.secret_key}} <br/> <br/>
+
+    <p>{{form.errors}}</p>
+
+    <input type="submit" value="Decrypt" />
+
+</form>
+
+

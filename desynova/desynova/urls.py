@@ -1,6 +1,5 @@
 from django.conf.urls import include, url
 from django.contrib import admin
-import shortly
 
 urlpatterns = [
     # Examples:
@@ -9,5 +8,6 @@ urlpatterns = [
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^shortly/', include('shortly.urls')),
+    url(r'^paste-lockly/', include('paste_lockly.urls')),
 
 ]

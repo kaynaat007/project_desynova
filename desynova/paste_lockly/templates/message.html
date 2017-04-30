@@ -1,0 +1,18 @@
+<form action="{% url 'message' %}" method="post">
+    {% csrf_token %}
+    {{form.message.label}}
+
+    {{form.message}} <br/> <br/> <br/>
+
+    {{form.secret_key.label}} <br/>
+
+    ({{form.secret_key.help_text}}) <br/>
+
+    {{form.secret_key}} <br/> <br/>
+
+    <p>{{form.errors}}</p>
+
+    <input type="submit" value="Submit" />
+</form>
+
+
