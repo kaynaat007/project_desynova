@@ -39,6 +39,9 @@ python manage.py crontab show
 let url = 'http://0.0.0.0:8000' or whatever your server address is. Replace {{url}} in following
 paragraphs with whatever address your django server is running.
 
+NOTE:  in first and second apps, please use browser 'back' button to go back to previous page if you are redirected
+to a new page after submitting form. I have not used any fancy js here to keep things simple. 
+
 # First app 'shortly' instructions
 
 1.  visit  {{url}}/shortly/url-shortener/  . This will open a basic html form in which you will be prompted for a url
