@@ -1,0 +1,1 @@
+valid_data_types = ['gainer', 'loser']

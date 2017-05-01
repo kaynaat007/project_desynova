@@ -9,5 +9,6 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^shortly/', include('shortly.urls')),
     url(r'^paste-lockly/', include('paste_lockly.urls')),
+    url(r'^web-scrapper/', include('web_scrapper.urls')),
 
 ]
