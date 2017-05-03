@@ -92,7 +92,7 @@ DATABASES = {
     }
 }
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static_media/'
 
 STATIC_ROOT= os.path.join(BASE_DIR,'static_media/')
 
