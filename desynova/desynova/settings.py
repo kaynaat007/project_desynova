@@ -97,11 +97,14 @@ DATABASES = {
 # STATIC_ROOT= os.path.join(BASE_DIR,'static_media/')
 
 
-STATIC_ROOT = '' # where collect static will collect files
+STATIC_ROOT = os.path.join(BASE_DIR, "static") # where collect static will collect files
 
 STATIC_URL = '/static/' # the url to fetch static files
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"), ) # additional dir where django looks for files
+STATICFILES_FINDERS = (
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
