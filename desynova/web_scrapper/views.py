@@ -1,4 +1,6 @@
 from django.core.cache import cache
+from django.shortcuts import render
+from django.views.generic import View
 
 from rest_framework import status
 from rest_framework.response import Response
@@ -8,6 +10,16 @@ from .constants import valid_data_types
 
 
 # Create your views here.
+
+
+class DisplayPage(View):
+    """
+    Simply displayes the page
+    """
+    template_name = 'stock_data.html'
+
+    def get(self, request):
+        return render(request, self.template_name)
 
 
 class GainerLooserView(APIView):
